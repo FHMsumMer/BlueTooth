@@ -123,7 +123,7 @@ public class ChatActivity extends AppCompatActivity {
     }
 
     /**
-     * 接收数据条码！！！！！！！！！！！！！！！！
+     * 接收数据!
      */
     private void read() {
         if (isConnection) {
