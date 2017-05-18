@@ -1,0 +1,84 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.fhm.bluetooth.BlueToothActivity" >
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:background="#FF3598DC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="蓝牙连接"
+                android:textSize="20sp"/>
+            <ImageView
+                android:id="@+id/iv_shuxin"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shuaxin"/>
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:orientation="horizontal"
+        android:background="#ffffff"
+        android:gravity="center_vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="蓝牙"
+            android:textSize="17sp"
+            android:textColor="#373737"
+            android:layout_marginLeft="31dp"/>
+        <Button
+            android:layout_marginLeft="238dp"
+            android:background="@drawable/kai"
+            android:id="@+id/openBluetooth_tb"
+            android:layout_width="49dp"
+            android:layout_height="24dp"
+            />
+    </LinearLayout>
+    <TextView
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:background="#f0f0f0"
+        android:textSize="13sp"
+        android:textColor="#A1A1A1"
+        android:text="         已配对设备"/>
+    <ListView
+        android:id="@+id/bondDevices"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </ListView>
+
+    <TextView
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:background="#f0f0f0"
+        android:textSize="13sp"
+        android:textColor="#A1A1A1"
+        android:text="         未配对设备"/>
+    <ListView
+        android:id="@+id/unbondDevices"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </ListView>
+
+
+
+</LinearLayout>
